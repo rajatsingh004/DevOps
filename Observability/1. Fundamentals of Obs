@@ -1,0 +1,23 @@
+Using observability you can get what is the state of the system.
+Utilization of Disk, CPU or Memory
+Succesful/Filed https request count out of 1000
+
+Obs also tells why the state is like that.
+It'll also help in how to fix the issues.
+You can get the traces of the issues.
+
+What: Metrics: Gives historical data of events
+Why: Logging (Logs): Have different types of logs like info, debug, error and trace
+How: Traces: will help in debug, troubleshoot and fix the issue,
+
+Diff b/w monitoring and obs?
+Monitoring: metrics + alerts + dashboard
+Observability: Monitoring + Logs + Tracing
+
+SLA
+To be upholding the agreement we need to have obs in place so that whenever we get frist failure, we resolve it so that the SLA is not broken.
+Eg: Our product responds to 10,000 request in 20ms, and we have a success rate of 99.5% meaning only 5 requests might fail which means when we get the first failure request, 
+we can resolve the problem ther eonly if we have OBS in place.
+
+
+OpenTelemetry: It is a popular CNCF platform, it is a collection of APIs and SDKs which can help instrument the above 3 things.
